@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 import Logo from '../../icon.png';
 
 import './Navbar.css';
@@ -9,7 +9,7 @@ export default function NavBar() {
         <header className="navbar">
             <div className='list1'>
                 <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-                <h1>NETFELIZ</h1>
+                <NavLink exact to="/" ><h1>NETFELIZ</h1></NavLink>
             </div>
             <nav>
                 <ul className="list">

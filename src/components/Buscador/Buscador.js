@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { getMovies } from "../../actions";
+import { addMovieFavorite, getMovies } from "../../actions";
 import "./Buscador.css";
 
 export class Buscador extends Component {
@@ -17,7 +17,7 @@ export class Buscador extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.getMovies(this.state.title);
-    this.setState({ title: ""});
+    this.setState({ title: "" });
   }
 
   render() {
@@ -45,6 +45,16 @@ export class Buscador extends Component {
             this.props.movies.map((movie) => (
               <div key={movie.imdbID}>
                 <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
+                <button
+                  onClick={() =>
+                    this.props.addMovieFavorite({
+                      title: movie.Title,
+                      id: movie.imdbID,
+                    })
+                  }
+                >
+                  FAV
+                </button>
               </div>
             ))}
         </ul>
@@ -61,7 +71,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getMovies: title => dispatch(getMovies(title)),
+    getMovies: (title) => dispatch(getMovies(title)),
+    addMovieFavorite: (title) => dispatch(addMovieFavorite(title)),
   };
 }
 
