@@ -8,12 +8,12 @@ export class ConnectedList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="arr">
         <h2>Películas Favoritas</h2>
-        <ul>
+        <ul className="listafav">
           {
             this.props.movies && this.props.movies.map(movie=> (
-              <div key={movie.id}>
+              <div key={movie.id} className="pelifavorita">
                   <Link to={`/movie/${movie.id}`}>
                     <span>{movie.title}</span>
                   </Link>

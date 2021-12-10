@@ -1,3 +1,44 @@
-.cnt {
-    padding-top: 10px;
+.arr {
+    padding: 20px;  
+}
+
+.arr > h2 {
+    background-color: #61b5b9;
+    border-radius: 10px; 
+    padding: 4px 8px;
+    color: #352d2d;
+
+}
+
+.listafav {
+    background-color: #F8BC9B;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.listafav button {
+    margin-left: 10px;
+    background-color: #F89B9B;
+    border-radius: 20px;
+    border: 1px solid #352d2d
+}
+
+.listafav button:hover{
+    background-color: #61b5b9; 
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.listafav {  
+    padding: 5px;  
+}
+
+.listafav a {
+    padding: 5px;
+    color: #352d2d
+}
+
+.pelifavorita {
+    padding: 10px 5px;
 }

@@ -23,41 +23,46 @@ export class Buscador extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
+      <div className="cnt">
         <h2>Buscador</h2>
-        <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
-          <div>
-            <label className="label" htmlFor="title">
-              Película:
-            </label>
-            <input
-              type="text"
-              id="title"
-              autoComplete="off"
-              value={title}
-              onChange={(e) => this.handleChange(e)}
-            />
-          </div>
-          <button type="submit">BUSCAR</button>
-        </form>
-        <ul>
-          {this.props.movies &&
-            this.props.movies.map((movie) => (
-              <div key={movie.imdbID}>
-                <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
-                <button
-                  onClick={() =>
-                    this.props.addMovieFavorite({
-                      title: movie.Title,
-                      id: movie.imdbID,
-                    })
-                  }
-                >
-                  FAV
-                </button>
-              </div>
-            ))}
-        </ul>
+        <div className="buscador">
+          <form
+            className="form-container"
+            onSubmit={(e) => this.handleSubmit(e)}
+          >
+            <div>
+              <label className="label" htmlFor="title">
+                Película :
+              </label>
+              <input
+                type="text"
+                id="title"
+                autoComplete="off"
+                value={title}
+                onChange={(e) => this.handleChange(e)}
+              />
+            </div>
+            <button type="submit">BUSCAR</button>
+          </form>
+          <ul className="listaPeliculas">
+            {this.props.movies &&
+              this.props.movies.map((movie) => (
+                <div key={movie.imdbID} className="peli">
+                  <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
+                  <button
+                    onClick={() =>
+                      this.props.addMovieFavorite({
+                        title: movie.Title,
+                        id: movie.imdbID,
+                      })
+                    }
+                  >
+                    FAV
+                  </button>
+                </div>
+              ))}
+          </ul>
+        </div>
       </div>
     );
   }

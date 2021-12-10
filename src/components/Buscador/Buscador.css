@@ -1,7 +1,24 @@
 .cnt {
-    padding-top: 10px;
+    padding: 20px;
+    
 }
+
+.cnt > h2 {
+    background-color: #61b5b9;
+    border-radius: 10px; 
+    padding: 4px 8px;
+    color: #352d2d;
+
+}
+
+.buscador {
+    background-color: #F8BC9B;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .form-container {
+    margin-top: 30px;
     display:flex;
     flex-direction: row;
     align-items: flex-start;
@@ -9,7 +26,50 @@
 
 .form-container button {
     margin-left: 20px;
+    background-color: #F89B9B;
+    border-radius: 20px;
+    border: 1px solid #352d2d
 }
+
+.form-container button:hover{
+    background-color: #61b5b9; 
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
 .label {
-    padding-right: 10px;
+    padding: 0px 10px;
+}
+
+input {
+    background-color: #e1fdff;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.listaPeliculas {
+    padding: 5px;
+}
+
+.peli {
+    padding: 5px;
+}
+
+.peli a {
+    color: #352d2d
+}
+
+.peli button {
+    margin-left: 10px;
+    background-color: #F89B9B;
+    border-radius: 20px;
+    border: 1px solid #352d2d
+}
+
+.peli button:hover{
+    background-color: #61b5b9; 
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
 }
