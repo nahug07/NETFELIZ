@@ -63,14 +63,14 @@ h1:hover {
 }
 
 .list-item a:hover {
-  background-color: #ab987a55;
+  background-color: #ab987a38;
   color: #f5f5f5;
   border-radius: 20%;
 }
 
 .list-item a.active {
-  background-color: #ab987a;
-  color: #141111;
+  background-color: #534a3b;
+  color: #f5f5f5b2;
   border-radius: 20%;
   border: 0.5px solid #352d2d4d;
 }
