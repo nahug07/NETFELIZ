@@ -15,16 +15,20 @@ class Movie extends React.Component {
         <div className="container">
           <h2>{this.props.movie.Title}</h2>
           <div className="container2">
-            <div className="izq">
-              <h3>Año: {this.props.movie.Year}</h3>
-              <h3>Duración: {this.props.movie.Runtime}</h3>
-              <h3>Lanzamiento: {this.props.movie.Released}</h3>
-              <h3>Género: {this.props.movie.Genre}</h3>
-              <h3>Diractor: {this.props.movie.Director}</h3>
-              <h3>Actores: {this.props.movie.Actors}</h3>
-            </div>
             <div className="der">
-              <img src={this.props.movie.Poster} alt="Poster película" className="poster" />
+              <img
+                src={this.props.movie.Poster}
+                alt="Poster película"
+                className="poster"
+              />
+            </div>
+            <div className="izq">
+              <h3>◾ Año: {this.props.movie.Year}</h3>
+              <h3>◾ Duración: {this.props.movie.Runtime}</h3>
+              <h3>◾ Lanzamiento: {this.props.movie.Released}</h3>
+              <h3>◾ Género: {this.props.movie.Genre}</h3>
+              <h3>◾ Director: {this.props.movie.Director}</h3>
+              <h3>◾ Actores: {this.props.movie.Actors}</h3>
             </div>
           </div>
         </div>

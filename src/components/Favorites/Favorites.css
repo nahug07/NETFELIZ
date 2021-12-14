@@ -1,44 +1,66 @@
 .arr {
-    padding: 20px;  
+  padding: 20px;
 }
 
 .arr > h2 {
-    background-color: #61b5b9;
-    border-radius: 10px; 
-    padding: 4px 8px;
-    color: #352d2d;
-
+  font-size: 2rem;
+  background-color: #ab987a;
+  border-radius: 10px;
+  padding: 4px 8px;
+  color: #141111;
 }
 
 .listafav {
-    background-color: #F8BC9B;
-    padding: 5px;
-    border-radius: 10px;
+  background-color: #ab987a;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .listafav button {
-    margin-left: 10px;
-    background-color: #F89B9B;
-    border-radius: 20px;
-    border: 1px solid #352d2d
+  margin-left: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 4px;
 }
 
-.listafav button:hover{
-    background-color: #61b5b9; 
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
+.listafav button:hover {
+  background-color: #352d2d7a;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #352d2d7a;
 }
 
-.listafav {  
-    padding: 5px;  
+.listafav {
+  padding: 5px;
 }
 
 .listafav a {
-    padding: 5px;
-    color: #352d2d
+  padding: 5px;
+  color: #352d2d;
+  font-size: 1.5rem;
+}
+
+.listafav a:hover {
+  color: #685858;
 }
 
 .pelifavorita {
-    padding: 10px 5px;
+  padding: 10px 5px;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 576px) {
+  .listafav a {
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  .arr {
+    padding-top: 5px;
+  }
+  .arr > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }

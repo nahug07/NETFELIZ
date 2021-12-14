@@ -1,75 +1,137 @@
 .cnt {
-    padding: 20px;
-    
+  padding: 20px;
+  width: auto;
 }
 
 .cnt > h2 {
-    background-color: #61b5b9;
-    border-radius: 10px; 
-    padding: 4px 8px;
-    color: #352d2d;
-
+  font-size: 2rem;
+  background-color: #ab987a;
+  border-radius: 10px;
+  padding: 4px 8px;
+  color: #141111;
 }
 
 .buscador {
-    background-color: #F8BC9B;
-    padding: 5px;
-    border-radius: 10px;
+  background-color: #ab987a;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .form-container {
-    margin-top: 30px;
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form-container button {
-    margin-left: 20px;
-    background-color: #F89B9B;
-    border-radius: 20px;
-    border: 1px solid #352d2d
+  margin: 10px 0 0 20px;
+  background-color: #141111;
+  color: #ab987a;
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid #352d2d;
+  align-self: center;
 }
 
-.form-container button:hover{
-    background-color: #61b5b9; 
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
+.form-container button:hover {
+  background-color: #352d2d7a;
+  color: #141111;
+  cursor: pointer;
+  border: 1px solid #352d2d7a;
 }
 
 .label {
-    padding: 0px 10px;
+  font-size: 2rem;
+  padding: 0px 10px;
 }
 
 input {
-    background-color: #e1fdff;
-    border-radius: 20px;
-    width: 300px;
+  font-size: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  width: 300px;
 }
 
 .listaPeliculas {
-    padding: 5px;
+  padding: 5px;
 }
 
 .peli {
-    padding: 5px;
+  padding: 5px;
 }
 
 .peli a {
-    color: #352d2d
+  color: #352d2d;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.peli a:hover {
+  color: #685858;
 }
 
 .peli button {
-    margin-left: 10px;
-    background-color: #F89B9B;
-    border-radius: 20px;
-    border: 1px solid #352d2d
+  margin-left: 15px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: #fbff00;
+  font-size: 1rem;
+  padding: 4px;
 }
 
-.peli button:hover{
-    background-color: #61b5b9; 
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
+.peli button:hover {
+  background-color: #352d2d7a;
+  color: #fbff00;
+  cursor: pointer;
+  border: 1px solid #352d2d7a;
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    font-size: 1.5rem;
+    width: auto;
+  }
+  .divlabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container button {
+    margin: 12px 0;
+  }
+  .label {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
+  .peli a {
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  .listaPeliculas {
+    margin-top: 0;
+    padding-top: 12px;
+    border-top: 1px solid #685858;
+  }
+  .cnt {
+    padding-top: 5px;
+  }
+  .cnt > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }

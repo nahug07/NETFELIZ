@@ -30,9 +30,9 @@ export class Buscador extends Component {
             className="form-container"
             onSubmit={(e) => this.handleSubmit(e)}
           >
-            <div>
+            <div className="divlabel">
               <label className="label" htmlFor="title">
-                Película :
+                Película   
               </label>
               <input
                 type="text"
@@ -48,7 +48,7 @@ export class Buscador extends Component {
             {this.props.movies &&
               this.props.movies.map((movie) => (
                 <div key={movie.imdbID} className="peli">
-                  <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
+                  <Link to={`/movie/${movie.imdbID}`}>◉  {movie.Title}</Link>
                   <button
                     onClick={() =>
                       this.props.addMovieFavorite({
@@ -57,7 +57,7 @@ export class Buscador extends Component {
                       })
                     }
                   >
-                    FAV
+                    ⭐
                   </button>
                 </div>
               ))}
