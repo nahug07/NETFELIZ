@@ -100,6 +100,9 @@ input {
 }
 
 @media (max-width: 768px) {
+  .cnt {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 576px) {
