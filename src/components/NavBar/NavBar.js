@@ -9,7 +9,7 @@ export default function NavBar() {
         <header className="navbar">
             <div className='list1'>
                 <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-                <NavLink exact to="/" ><h1>NETFELIZ</h1></NavLink>
+                <NavLink exact to="/" ><h1>NETFILM</h1></NavLink>
             </div>
             <nav>
                 <ul className="list">
