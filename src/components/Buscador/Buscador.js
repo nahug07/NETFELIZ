@@ -35,6 +35,7 @@ export class Buscador extends Component {
                 Película   
               </label>
               <input
+                placeholder="Buscar un película.."
                 type="text"
                 id="title"
                 autoComplete="off"
